@@ -32,9 +32,31 @@ body {
 header {
   padding: 30px 0;
 }
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header .logo {
   font-weight: 900;
   font-size: 30px;
+}
+
+header .nav {
+  list-style: none;
+}
+
+header .nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+header .nav li:hover {
+  opacity: .4;
 }
 
 header .presentation {
